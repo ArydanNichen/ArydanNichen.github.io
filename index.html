@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <!-- Sisipkan Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.18.1/font/bootstrap-icons.css">
+    
+
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#BC8887" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Undangan Pernikahan Ary & Nichen</title>
+
+    <meta property="og:title" content="Undangan Pernikahan Ary & Nichen - Minggu, 17 September 2023">
+    <meta property="og:description" content="Undangan Pernikahan Ary & Nichen - Minggu, 17 September 2023 di Birin Mlese Gantiwarno Klaten">
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:image" content="https://sherly.dae.ng/image/sherly-daeng-wedding-thumbnail.png">
+    <meta property="og:url" content="http://sherly.dae.ng/index.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Bulma Version 0.8.x-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/bulma-tooltip@0.1.5/dist/bulma-tooltip.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/menikah.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
+    <script
+      src="https://kit.fontawesome.com/2828f7885a.js"
+      integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.coundown.js"></script>
+    <link rel="icon" type="image/png" href="image/favicon.png" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23064379-20"></script>
+    <!-- Begin Script for Countdown -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-23064379-20');
+    </script>
+    <!-- Begin Script for Countdown -->
+
+    <!-- Github Button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    </style>
+  </head>
+
+  <body>
+    <!-- Begin Preloader -->
+    <div class="preloader-wrapper">
+      <div class="preloader">
+        <img src="image/favicon.png" alt="Flower" />
+      </div>
+    </div>
+    <!-- End Preloader-->
+    <!-- Begin Header -->
+    <div class="header-wrapper" id="home">
+      <!-- Begin Hero -->
+      <section class="hero is-large">
+        <!-- Begin Mobile Nav -->
+        <nav class="navbar is-transparent is-hidden-desktop">
+          <!-- Begin Burger Menu -->
+          <div class="navbar-brand is-fixed-top">
+            <div class="navbar-burger burger" data-target="mobile-nav">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <!-- End Burger Menu -->
+          <div id="mobile-nav" class="navbar-menu">
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <a class="navbar-item" href="#Waktu">
+                  Waktu
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#lokasi">
+                  Lokasi
+                </a>
+              </div>
+              
+              <div class="navbar-item">
+                <a class="navbar-item" href="#tentang-sherly-daeng">
+                  Tentang Ary dan Nichen
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#rsvp">
+                  RSVP
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- End Mobile Nav -->
+        <!-- Begin Hero Content-->
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h1 class="subtitle">Undangan Pernikahan</h1>
+            <h2 class="title">Ary & Nichen</h2>
+            <h4 class="subtitle tempatwaktu">
+              
+                Minggu, 17 September 2023
+                </br>
+                Birin, Mlese, Gantiwarno
+                </br>
+                Klaten
+              
+            </h4>
+            <h3 class="kepada">Kepada Bapak/Ibu/Saudara/i : </h3>
+            <h2 Class="tamu" id="namaTamu"> </h2>
+            <script>
+              const urlParams = new URLSearchParams(window.location.search);
+              const namaTamuParam = urlParams.get("nama");
+               // Jika parameter "nama" ada, ganti "%20" dengan spasi dan tampilkan di halaman
+              if (namaTamuParam) {
+                const namaTamu = namaTamuParam.replace(/%20/g, ' ');
+                document.getElementById("namaTamu").textContent = namaTamu;
+        }
+
+    </script>
+          </div>
+          <!-- Start Countdown -->       
+          <div>
+            <ul id="hitungmundur" >
+              <li><span class="days">00</span><p class="days_text">Hari</p></li>
+              <li class="separator">:</li>
+              <li><span class="hours">00</span><p class="hours_text">Jam</p></li>
+              <li class="separator">:</li>
+              <li><span class="minutes">00</span><p class="minutes_text">Menit</p></li>
+              <li class="separator">:</li>
+              <li><span class="seconds">00</span><p class="seconds_text">Detik</p></li>
+            </ul>
+            <div class="spasi">
+            </div>
+            <script type="text/javascript">
+              var now = new Date();
+              var day = now.getDate();
+              var month = now.getMonth() + 1;
+              var year = now.getFullYear() + 1;
+          
+              var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
+              var harih = '9/17/2023 17:00:00';
+
+              $('#hitungmundur').countdown({
+                date: harih, // TODO Date format: 07/27/2017 17:00:00
+                offset: +7, // TODO Your Timezone Offset
+                day: 'Hari',
+                days: 'Hari'
+              }, function () {
+                alert('Done!');
+              });
+            </script>
+            <div class="space100px"></div>
+            <!-- audio -->
+           <div class="container mt-5">
+            <div class="row">
+              <div class="col text-center">
+                  <audio id="player" autoplay loop>
+                      <source src="image/song.mp3" type="audio/mp3">
+                  </audio>
+                  <div class="btn-group center-horizontal">
+                      <button id="play-pause-button" class="btn btn-primary custom-play-button audio">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                              <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+            <!-- <audio autoplay controls loop id="player" >
+              <source src="image/song.mp3" type="audio/mp3">
+            </audio>  -->
+
+          </div>
+          <!-- End Countdown -->
+        </div>
+        <!-- End Hero Content-->
+        <!-- Begin Hero Menu -->
+        <div class="hero-foot ">
+          <div class="hero-foot--wrapper">
+            <div class="columns">
+              <div class="column is-12 hero-menu-desktop has-text-centered">
+                <ul>
+                  <li class="is-active">
+                    <a href="#home">Home</a>
+                  </li>
+                  <li>
+                    <a href="#Waktu">Waktu</a>
+                  </li>
+                  <li>
+                    <a href="#lokasi">Lokasi</a>
+                  </li>
+                  <li>
+                    <a href="#tentang-sherly-daeng">Ary & Nichen</a>
+                  </li>
+
+                  <li>
+                    <a href="#rsvp">RSVP</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Hero Menu -->
+      </section>
+      <!-- End Hero -->
+    </div>
+    <!-- End Header -->
+
+    <!-- Begin Main Content -->
+    <div class="main-content">
+    <!-- Begin regular-section-->
+     <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content" id="regular-section">
+        
+        <div data-aos="fade-up" data-aos-easing="linear">
+          <img src="image/bismillah.png" class="bismillah has-text-centered" alt="Bismillahirrahmaanirrahiim">
+        </div>
+
+        <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
+          Assalamu'alaikum Warahmatullahi Wabarakatuh.
+          <br />
+          Dengan memohon rahmat dan ridha Allah swt, 
+          <br />
+          kami bermaksud mengundang Bapak/Ibu/Saudara/Saudari pada acara pernikahan kami
+        </p>
+
+        <span class="space40px"></span>
+        <span class="space40px"></span>
+
+        <div data-aos="fade-up" data-aos-easing="linear">
+          <div class="nama-lengkap" >
+          Zidhik Ari Permadi, S.T
+          </div>
+          <div class="ampersand">&</div>
+          <div class="nama-lengkap">
+          Aida Nichen Palupy, S.Pd
+          </div>
+           
+        </div>
+        <span class="space40px"></span>
+        <div data-aos="fade-up" data-aos-easing="linear">
+          <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
+        </div>
+        <span class="space40px"></span>
+        <span class="space40px"></span>
+      </section>
+      <!-- End regular-section-->    
+      
+      <!-- Begin Waktu Section -->
+      <section class="section-dark" id="Waktu">
+        <div class="container">
+
+          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+            <h1 class="title has-text-centered section-title">Waktu</h1>
+          </div>
+          <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
+            <div
+              class="column is-4 has-vertically-aligned-content">
+            
+              <p class="is-larger has-text-centered">
+                  <div class="waktu tanggal-hari has-text-centered">Minggu</div> 
+                  <div class="waktu tanggal-angka has-text-centered">17</div>
+                  <div class="waktu tanggal-bulan has-text-centered">September 2023</div>
+              </p>
+            
+            </div>
+            <div class="column is-4 has-vertically-aligned-content">
+            
+              <p class="waktu is-larger has-text-centered">
+              </p>
+            
+            </div>
+
+            <div class="column is-4 has-vertically-aligned-content">
+              
+              <h1 class="waktu is-larger has-text-centered">
+                Unduh Mantu
+                <br>
+                <strong>10.00 - Sampai Selesai WIB</strong>
+              </h1>
+              
+              
+            </div>
+
+          </div>
+        </div>
+        <div class="space40px"></div>
+        <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+          <a href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NGgzdW00NG84dXFwMzcwNXYxbGliNGxzaWggZGFlbmdkb2FuZ0Bt&amp;tmsrc=daengdoang%40gmail.com" target="_blank" class="button has-tooltip btn-cta" data-tooltip="Add to Calendar" target="_blank" data-aos="zoom-in">
+            <i class="far fa-calendar-plus"></i>
+            &nbsp;&nbsp;Google Calendar
+          </a>
+        </div>
+      </section>
+      <!-- End Waktu Content -->
+
+      <!-- Begin Lokasi Section -->
+      <section class="section-darker" id="lokasi" >
+        <div class="container">
+          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+            <h1 class="title has-text-centered section-title">Lokasi</h1>
+            <p class="tempat is-larger has-text-centered">
+              <strong>Birin</strong>
+              <br>
+              Rt 02 Rw 04, Mlese
+              <br>
+              Kec. Gantiwarno, Kab. Klaten
+              <br>
+            </p>
+          </div>
+          <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d494.1486454631375!2d110.5472554288097!3d-7.769755447107038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwNDYnMTEuMyJTIDExMMKwMzInNTAuMCJF!5e0!3m2!1sen!2sid!4v1693934642637!5m2!1sen!2sid" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+          <div class="space40px"></div>
+          <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+            <a href="https://www.google.com/maps/place/7%C2%B046'11.3%22S+110%C2%B032'50.0%22E/@-7.7697657,110.5472607,20.73z/data=!4m4!3m3!8m2!3d-7.769812!4d110.54721?entry=ttu" class="button btn-cta" target="_blank" data-aos="zoom-in">
+              <i class="far fa-directions"></i>
+              &nbsp;&nbsp;Google Maps
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- End Lokasi Content -->
+
+      <!-- Begin Tentang Sherly and Daeng -->
+      <section class="section-light regular-section is-fullheight" id="tentang-sherly-daeng">
+        <div class="container">
+          <div class="columns is-multiline">  
+          <div class="column has-text-centered is-12 prolog">
+            <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Tentang Ary Dan Nichen</h1>
+            
+
+          
+          <!-- IMAGES -->  
+        <div class=" tile">
+          <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <article class="tile is-child foto1 notification foto1" data-aos="fade-up" data-aos-easing="linear">
+              <div class="content">
+      <!--       <p class="title-foto">November 2018</p>
+                  <p class="subtitle-foto">
+                  Pertama kali saling kenal di
+                </p> -->
+              </div>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child notification foto2" data-aos="fade-up" data-aos-easing="linear">
+              <div class="content">
+               <!--<   <p class="title-foto">
+                  Desember 2018 - Februari 2019
+                </p>
+                <p class="subtitle-foto">
+                  Satu kantor, satu divisi, dan posisi tempat duduk saling membelakangi.
+                </p>   -->
+              </div>            
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child notification foto3" data-aos="fade-up" data-aos-easing="linear">
+              <div class="content">  
+               <!--<   <p class="title-foto">
+                  Maret 2019
+                </p>
+                <p class="subtitle-foto">
+                  Cerita cinta dimulai
+                </p>-->
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+ <!--<       <div class="space24px"></div>
+      <div class="tile is-ancestor">
+        <div class="tile is-parent">
+          <article class="tile is-child notification foto6" data-aos="fade-up" data-aos-easing="linear">
+            <div class="content">
+              <p class="title-foto">Juni 2019</p>
+              <p class="subtitle-foto">Pertemuan 2 keluarga</p>
+            </div>
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child notification foto4" data-aos="fade-up" data-aos-easing="linear">
+            <div class="content">
+              <p class="title-foto">Desember 2019</p>
+              <p class="subtitle-foto">Lamaran</p>
+            </div>
+          </article>
+        </div>
+        <div class="tile is-parent">              
+          <article class="tile is-child notification foto5" data-aos="fade-up" data-aos-easing="linear">
+            <div class="content">
+              <p class="title-foto">Maret 2020</p>
+              <p class="subtitle-foto">Menikah</p>
+            </div>
+          </article>
+        </div>
+      </div>   -->
+          <!-- IMAGES -->
+          <div class="space40px"></div>
+            <div data-aos="fade-up" data-aos-easing="linear">
+              <img src="image/divider-leaves.png" class="divider has-vertically-align" alt="~~~">
+            </div> 
+            <div class="space40px"></div>
+            <div class="space40px"></div>
+
+          </div>
+        </div>
+      </section>
+      <!-- End Tentang Sherly dan Daeng -->
+
+      <!-- Begin RSVP Content -->
+      <section class="section-dark contact" id="rsvp">
+        <div class="container">
+          <div class="columns is-multiline">          
+            <div class="column is-12 prolog">
+              <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Konfirmasi Kehadiran</h1>
+            </div>
+            <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+              <p class="h2 subtitle">
+                Merupakan suatu kehormatan dan kebahagiaan bagi kami
+                <br>
+                apabila Bapak/Ibu/Saudara/Saudari berkenan hadir
+                memberikan doa restu.
+                <br>
+                <br>
+                Jika bisa hadir kami tunggu konfirmasinya, 
+                <br>
+                Jika tidak memungkinkan untuk hadir di pernikahan kami,tidak mengapa,
+                <br> 
+                <br>
+                semoga bisa berjumpa di lain kesempatan
+                <br>
+                <br>
+                Stay safe & jaga kesehatan ya :)
+                </p>
+                
+
+
+              <!-- <a href="whatsapp://send?&phone=+6285729716667" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
+                <i class="fab fa-whatsapp"></i>
+                &nbsp;&nbsp;Kabari Ary
+              </a>
+          
+              <a href="whatsapp://send?&phone=+6285756619136" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
+                <i class="fab fa-whatsapp"></i>
+                &nbsp;&nbsp; Kabari Nichen
+              </a > -->
+
+              <div class="space40px" class="hero-body" >
+                <form class="row row-cols-md-auto g-3 align-items-center justify-content-center"
+                  method="POST" action="https://script.google.com/macros/s/AKfycbxssc-5xIEjJknsBKcaXiyrQiyOKfygVK58Z8wRq98wUBGCyn9DrB_xV9XT8KgVkFSl2A/exec" id="my-form">
+                <div class="col-12">
+                  <div class="mb-3">
+                    <label for="nama" class="form-label">Nama</label>
+                    <input type="text" class="form-control" id="nama" name="nama">
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="mb-3">
+                    <label for="ucapan" class="form-label">Ucapan</label>
+                    <input type="text" class="form-control" id="ucapan" name="ucapan">
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="mb-3">
+                    <label for="status" class="form-label">Konfirmasi</label>
+                    <select name="status" id="status" class="form-select">
+                      <option selected>Pilih salah satu</option>
+                      <option value="Hadir">Hadir</option>
+                      <option value="Halangan">Tidak Hadir</option>
+                    </select>
+                    
+                  </div>
+                </div>
+                <div class="col-12";>
+                  <button class="btn btn-primary">Kirim</button>
+                </div>
+
+              </div>
+
+              <div class="space400px"></div>
+              <div data-aos="fade-up" data-aos-easing="linear" class="hero-body">
+                <div class="container has-text-centered">
+                  <p class="subtitle" >
+                  Ungkapan Tanda Kasih
+                  </p>
+                  <h2 class="title">Kirim Hadiah</h2>
+                  <div class="roow justify-content-center text-center">
+                    <div class="roow justify-content-center text-center">
+                      <ul class="centered-list-group">
+                        <ul class="list-group centered-list-group">
+                          <li class="list-group-item" data-rekening="6975125967">
+                            <div class="fw-bold">BCA</div>
+                              <br>
+                              <p>6975125967</p>
+                              <br>
+                              Zidhik Ari Permadi
+                              <br>
+                              <button class="btn btn-salin" onclick="salinNomorRekening(this)">
+                                  <i class="fa fa-clone"></i> Salin
+                              </button>
+                          </li>
+                      </ul>
+                      <ul class="centered-list-group">
+                          <li class="list-group-item" data-rekening="3077091491">
+                              <div class="fw-bold">Bank Jateng</div>
+                              <br>
+                              <p>3077091491</p>
+                              <br>
+                              Aida Nichen Palupy
+                              <br>
+                              <button class="btn btn-salin" onclick="salinNomorRekening(this)">
+                                  <i class="fa fa-clone"></i> Salin
+                              </button>
+                          </li>
+                      </ul>
+
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div class="space40px"></div>
+              <div data-aos="fade-up" data-aos-easing="linear">
+                <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
+              </div>
+              <div class="space40px"></div>
+              <p class="h2 subtitle" data-aos="fade-up" data-aos-easing="linear">
+                Kami yang berbahagia,
+                <br>
+                <a class="instagram" href="https://www.instagram.com/ary_permadi/" target="_blank" alt="Instagram Sherly">
+                  <i class="fab fa-instagram"></i> @ary_permadi
+                </a>
+                &nbsp
+                <a class="instagram" href="https://www.instagram.com/aidanichen52/" target="_blank" alt="Instagram Daeng">
+                  <i class="fab fa-instagram"></i> @aidanichen52
+                </a>
+              </p>
+
+            </div>
+ 
+         </div>
+        </div>
+      </section>
+      <!-- End RSVP Content -->
+    <!-- End Main Content -->
+
+    <!-- Begin Footer -->
+    <div class="footer">
+      <div class="container">
+          <p class="has-vertically-align">2023 Ary dan Nichen</p>
+      </div>
+    </div>
+    <!-- End Footer -->
+
+    <!-- Scripts -->
+    <script >
+      window.addEventListener("load", function() {
+        const form = document.getElementById('my-form');
+        form.addEventListener("submit", function(e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+            method: 'POST',
+            body: data,
+          })
+          .then(() => {
+            alert("Berhasil");
+          })
+        });
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!-- Audio -->
+<script>
+    // Ambil elemen audio dan tombol play
+    const audio = document.getElementById('player');
+    const playPauseButton = document.getElementById('play-pause-button');
+
+    // Fungsi untuk mengatur pemutaran audio dan mengubah ikon tombol
+    function toggleAudio() {
+        if (audio.paused) {
+            audio.play(); // Mulai pemutaran jika sedang berhenti
+            playPauseButton.innerHTML = `
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pause-fill" viewBox="0 0 16 16">
+                    <path d="M5.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-.5.5.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 .5-.5z"></path>
+                    <path d="M10.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-.5.5.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 .5-.5z"></path>
+                </svg>
+            `; // Ganti ikon ke pause
+        } else {
+            audio.pause(); // Jeda pemutaran jika sedang berjalan
+            playPauseButton.innerHTML = `
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                </svg>
+            `; // Ganti ikon ke play
+        }
+    }
+
+    // Tambahkan event listener untuk tombol play
+    playPauseButton.addEventListener('click', toggleAudio);
+
+    // Fungsi untuk mengubah warna tombol saat audio dimulai, dijeda, atau dihentikan
+    function updateButtonColor() {
+        if (!audio.paused) {
+            // Audio sedang dimainkan
+            playPauseButton.style.backgroundColor = '#ffffff'; // Warna latar belakang menjadi putih
+            playPauseButton.style.color = '#000000'; // Warna teks menjadi hitam
+        } else {
+            // Audio dijeda atau dihentikan
+            playPauseButton.style.backgroundColor = 'transparent'; // Latar belakang transparan
+            playPauseButton.style.color = '#ffffff'; // Warna teks menjadi putih
+        }
+    }
+
+    // Tambahkan event listener untuk audio events
+    audio.addEventListener('play', updateButtonColor);
+    audio.addEventListener('pause', updateButtonColor);
+    audio.addEventListener('ended', updateButtonColor);
+</script>
+
+
+<!-- salin norek -->
+    <script>
+      function salinNomorRekening(button) {
+      // Temukan elemen li yang berisi nomor rekening
+      const listItem = button.closest('.list-group-item');
+      // Dapatkan nomor rekening dari atribut data-rekening
+      const nomorRekening = listItem.getAttribute('data-rekening');
+      // Buat elemen textarea sementara untuk menyalin teks
+      const textarea = document.createElement('textarea');
+      textarea.value = nomorRekening;
+      // Sisipkan elemen textarea ke dalam dokumen
+      document.body.appendChild(textarea);
+      // Salin teks dari elemen textarea
+      textarea.select();
+      document.execCommand('copy');
+      // Hapus elemen textarea sementara
+      document.body.removeChild(textarea);
+      // Beri umpan balik bahwa nomor rekening telah berhasil disalin
+    }
+    </script>
+
+    <!-- end salin rek -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/menikah.js"></script>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-out",
+        duration: 800,
+      });
+    </script>
+  </body>
+</html>
